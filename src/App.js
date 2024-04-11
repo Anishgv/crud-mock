@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
    const getStudents = async ()=>{
     try {
-      const response = await fetch ("http://localhost:9000/students",{
+      const response = await fetch ("https://students-data-delta.vercel.app/students",{
         method : "GET"
       })
       const data = await response.json();
