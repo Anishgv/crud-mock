@@ -60,7 +60,7 @@ const AddStudents = ({ studentsData, setStudents }) => {
       //   yearsOfExperience: experience,
       // };
 
-      const response = await fetch ("https://65701fe209586eff6640bd99.mockapi.io/users",{
+      const response = await fetch ("https://students-data-delta.vercel.app/students",{
         method : "POST",
         body : JSON.stringify(newStudent),
         headers : {
