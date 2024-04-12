@@ -26,7 +26,7 @@ export function StudentDetails({studentsData,setStudents}) {
   const deleteStudentData = async (studId) => {
 
     try {
-      const response = await fetch (`https://65701fe209586eff6640bd99.mockapi.io/users/${studId}`,{
+      const response = await fetch (`https://students-data-delta.vercel.app/students/${studId}`,{
         method : "DELETE",
       });
       const data = await response.json()

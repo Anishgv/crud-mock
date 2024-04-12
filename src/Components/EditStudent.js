@@ -50,7 +50,7 @@ const EditStudent = ({ studentsData, setStudents }) => {
     // };
    
     try {
-      const response = await fetch (`https://65701fe209586eff6640bd99.mockapi.io/users/${editId}`,{
+      const response = await fetch (`https://students-data-delta.vercel.app/students/${editId}`,{
         method : "PUT",
         body : JSON.stringify(editedStudent),
         headers : {
